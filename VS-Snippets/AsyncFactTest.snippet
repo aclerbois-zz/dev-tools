@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>AsyncFactTest</Title>
+      <Author>Adrien Clerbois</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>asyncfact</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MethodName</ID>
+          <ToolTip>MethodName</ToolTip>
+          <Default>MethodName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ExpectedInput</ID>
+          <ToolTip>ExpectedInput</ToolTip>
+          <Default>ExpectedInput</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ExpectedBehavior</ID>
+          <ToolTip>ExpectedBehavior</ToolTip>
+          <Default>ExpectedBehavior</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    [Fact]
+    public async Task $MethodName$_$ExpectedInput$_$ExpectedBehavior$_Async()
+    {
+        // Arrange
+        $end$
+
+        // Act
+        
+
+        // Assert
+        
+    }]]></Code>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
